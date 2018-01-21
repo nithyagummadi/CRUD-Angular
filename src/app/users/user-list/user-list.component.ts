@@ -28,9 +28,7 @@ export class UserListComponent implements OnInit {
                setTimeout(() => this.toast.warning("Record deleted Successfully","User Register"), 1000);
             });
               
-      //this.userService.findAll();
-      
-      //this.toast.warning("Record deleted Successfully","User Register");
+    
 
     }
   }
