@@ -1,0 +1,21 @@
+<table class="table table-dark table-striped table-hover table-bordered" style="border-radius: 4px"> 
+ <tr>
+ 
+  <th>First Name</th>
+   <th>Last Name</th>
+    <th>Email</th>
+     <th>City</th>
+     <th></th>
+     <th></th>
+ </tr>
+
+ <tr *ngFor="let u of userService.users">
+  
+   <td >{{u.firstName}}</td>
+   <td> {{u.lastName}}</td>
+   <td>{{u.email}}</td>
+   <td>{{u.city}}</td>
+   <td><button class="btn btn-primary btn-success" (click)="update(u)"><i class="fa fa-pencil-square-o"></i>Update</button></td>
+    <td><button class="btn btn-primary btn-danger"(click)="ondelete(u.id)"><i class="fa fa-trash-o"></i>Delete</button></td>
+ </tr>
+</table>
